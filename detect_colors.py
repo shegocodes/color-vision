@@ -31,8 +31,8 @@ def resize_image(width, height, threshold):
 		if width == max_dim:
 			new_height = int((height * threshold) / width)
 			new_width = threshold
-		return new_height, new_width
-	else: return height, width
+		return new_width, new_height
+	else: return width, height
 
 def detect_colors(image_path):
     """
